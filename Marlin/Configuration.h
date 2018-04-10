@@ -360,9 +360,14 @@
   //#define  DEFAULT_Kd 114
 
   // MakerGear
-  #define  DEFAULT_Kp 7.0
-  #define  DEFAULT_Ki 0.32 //0.1
-  #define  DEFAULT_Kd 36   //12
+  //#define  DEFAULT_Kp 7.0
+  //#define  DEFAULT_Ki 0.32 //0.1
+  //#define  DEFAULT_Kd 36   //12
+
+  //Replicator2 12V cartridge - PID Autotune results
+  #define  DEFAULT_Kp 13.79
+  #define  DEFAULT_Ki 0.85
+  #define  DEFAULT_Kd 55.65
 
   // Mendel Parts V9 on 12V
   //#define  DEFAULT_Kp 63.0
