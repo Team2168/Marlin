@@ -536,7 +536,7 @@
  * Override with M203
  *                                      X, Y, Z, E0 [, E1[, E2[, E3[, E4]]]]
  */
-#define DEFAULT_MAX_FEEDRATE          { 200, 200, 5, 25 }
+#define DEFAULT_MAX_FEEDRATE          { 200, 200, 10, 25 }
 
 /**
  * Default Max Acceleration (change/s) change = mm/s
@@ -748,8 +748,8 @@
 // @section machine
 
 // Invert the stepper direction. Change (or reverse the motor connector) if an axis goes the wrong way.
-#define INVERT_X_DIR false
-#define INVERT_Y_DIR true
+#define INVERT_X_DIR true
+#define INVERT_Y_DIR false
 #define INVERT_Z_DIR false
 
 // Enable this option for Toshiba stepper drivers
@@ -780,8 +780,8 @@
 // @section machine
 
 // The size of the print bed (mm)
-#define X_BED_SIZE 1520
-#define Y_BED_SIZE 2460
+#define X_BED_SIZE 1300
+#define Y_BED_SIZE 2150
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
 #define X_MIN_POS 0
