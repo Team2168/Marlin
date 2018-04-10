@@ -1,3 +1,13 @@
+This repo contains the firmware revisions used for the Makerbot Replicator 2 that we've retrofitted with a RAMPS 1.4 control board.
+
+### Hardware Components Purchased:
+Fused Power Outlet: https://www.amazon.com/gp/product/B00ME5YAPK
+12V Heater Cartridge and 100K NTC Thermistor: https://www.amazon.com/gp/product/B077ZV5N5Z
+12V 30A power supply: https://www.amazon.com/gp/product/B06VWV5YCH/
+LCD Module: https://www.amazon.com/gp/product/B01FLU9X5Q/
+RAMPS 1.4 kit (includes Mega2560 and TI DRV8825 stepper drivers): https://www.amazon.com/gp/product/B0789F3R6X/
+
+
 # Marlin 3D Printer Firmware
 <img align="right" src="../../raw/1.1.x/buildroot/share/pixmaps/logo/marlin-250.png" />
 
