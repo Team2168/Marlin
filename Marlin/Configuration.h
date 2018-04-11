@@ -785,16 +785,20 @@
 // @section machine
 
 // The size of the print bed (mm)
-#define X_BED_SIZE 1300
-#define Y_BED_SIZE 2150
+#define X_BED_SIZE 285
+#define Y_BED_SIZE 130
+
+//delta position between edge of build plate and end of travel switch (mm)
+#define X_SWITCH_OFFSET 6
+#define Y_SWITCH_OFFSET 20
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
 #define X_MIN_POS 0
 #define Y_MIN_POS 0
 #define Z_MIN_POS 0
-#define X_MAX_POS X_BED_SIZE
-#define Y_MAX_POS Y_BED_SIZE
-#define Z_MAX_POS 1550
+#define X_MAX_POS X_BED_SIZE + X_SWITCH_OFFSET
+#define Y_MAX_POS Y_BED_SIZE + Y_SWITCH_OFFSET
+#define Z_MAX_POS 160
 
 /**
  * Software Endstops
