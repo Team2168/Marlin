@@ -534,7 +534,7 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2[, E3[, E4]]]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 88.888889, 88.888889, 400, 500 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 88.888889, 88.888889, 400, 96.275201870333662468889989185642 }
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -625,7 +625,7 @@
  * Use G29 repeatedly, adjusting the Z height at each point with movement commands
  * or (with LCD_BED_LEVELING) the LCD controller.
  */
-//#define PROBE_MANUALLY
+#define PROBE_MANUALLY
 
 /**
  * A Fix-Mounted Probe either doesn't deploy or needs manual deployment.
@@ -763,7 +763,7 @@
 // @section extruder
 
 // For direct drive extruder v9 set to true, for geared extruder set to false.
-#define INVERT_E0_DIR false
+#define INVERT_E0_DIR true
 #define INVERT_E1_DIR false
 #define INVERT_E2_DIR false
 #define INVERT_E3_DIR false
@@ -798,7 +798,7 @@
 #define Z_MIN_POS 0
 #define X_MAX_POS X_BED_SIZE + X_SWITCH_OFFSET
 #define Y_MAX_POS Y_BED_SIZE + Y_SWITCH_OFFSET
-#define Z_MAX_POS 160
+#define Z_MAX_POS 152
 
 /**
  * Software Endstops
@@ -878,7 +878,7 @@
  *   leveling in steps so you can manually adjust the Z height at each grid-point.
  *   With an LCD controller the process is guided step-by-step.
  */
-//#define AUTO_BED_LEVELING_3POINT
+#define AUTO_BED_LEVELING_3POINT
 //#define AUTO_BED_LEVELING_LINEAR
 //#define AUTO_BED_LEVELING_BILINEAR
 //#define AUTO_BED_LEVELING_UBL
@@ -956,12 +956,12 @@
 
   // 3 arbitrary points to probe.
   // A simple cross-product is used to estimate the plane of the bed.
-  #define ABL_PROBE_PT_1_X 15
-  #define ABL_PROBE_PT_1_Y 180
-  #define ABL_PROBE_PT_2_X 15
+  #define ABL_PROBE_PT_1_X 240
+  #define ABL_PROBE_PT_1_Y 110
+  #define ABL_PROBE_PT_2_X 150
   #define ABL_PROBE_PT_2_Y 20
-  #define ABL_PROBE_PT_3_X 170
-  #define ABL_PROBE_PT_3_Y 20
+  #define ABL_PROBE_PT_3_X 40
+  #define ABL_PROBE_PT_3_Y 110
 
 #elif ENABLED(AUTO_BED_LEVELING_UBL)
 
@@ -1003,7 +1003,7 @@
  * Use the LCD controller for bed leveling
  * Requires MESH_BED_LEVELING or PROBE_MANUALLY
  */
-//#define LCD_BED_LEVELING
+#define LCD_BED_LEVELING
 
 #if ENABLED(LCD_BED_LEVELING)
   #define MBL_Z_STEP 0.025    // Step size while manually probing Z axis.
@@ -1011,7 +1011,7 @@
 #endif
 
 // Add a menu item to move between bed corners for manual bed adjustment
-//#define LEVEL_BED_CORNERS
+#define LEVEL_BED_CORNERS
 
 /**
  * Commands to execute at the end of G29 probing.
